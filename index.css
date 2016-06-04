@@ -1,13 +1,13 @@
 <style>
 #header {
-    background-color:black;
+    background-color:brown;
     color:white;
     text-align:center;
     padding:5px;
 }
 #nav {
     line-height:30px;
-    background-color:#eeeeee;
+    background-color:brown;
     height:300px;
     width:100px;
     float:left;
@@ -19,7 +19,7 @@
     padding:10px; 
 }
 #footer {
-    background-color:black;
+    background-color:brown;
     color:white;
     clear:both;
     text-align:center;
