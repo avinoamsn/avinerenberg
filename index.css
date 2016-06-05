@@ -23,6 +23,7 @@ body {
     left: 20px;
     background-color:brown;
     float: left;
+    line-height: .25;
 }
 #footer {
     position: fixed;
@@ -34,5 +35,9 @@ body {
     color:black;
     clear:both;
     text-align:center;
+}
+p.small {
+    font-size: 12px;
+    line-height: 5;
 }
 </style>
