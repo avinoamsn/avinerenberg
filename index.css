@@ -28,6 +28,8 @@ body {
     position: fixed;
     bottom: 0%;
     left: 50%;
+    /**centered with this, although I'm not sure why it's necessary*/
+    margin-left: -100px;
     background-color:brown;
     color:black;
     clear:both;
