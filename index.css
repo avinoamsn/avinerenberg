@@ -1,17 +1,17 @@
 body {
-    font-family: courier;
-    background-color:brown;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    background-color:#B6D5CC;
 }
 <style>
 #header {
-    background-color:brown;
+    background-color:#B6D5CC;
     color:black;
     text-align:left;
     padding:5px;
 }
 /**#nav {
     line-height:30px;
-    background-color:brown;
+    background-color:#B6D5CC;
     height:300px;
     width:100px;
     float:left;
@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: 40%;
     left: 20px;
-    background-color:brown;
+    background-color:#B6D5CC;
     float: left;
     line-height: .25;
 }
@@ -31,7 +31,7 @@ body {
     left: 50%;
     /**centered with this, although I'm not sure why it's necessary*/
     margin-left: -100px;
-    background-color:brown;
+    background-color:#B6D5CC;
     color:black;
     clear:both;
     text-align:center;
