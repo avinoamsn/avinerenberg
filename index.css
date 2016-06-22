@@ -1,6 +1,6 @@
 body {
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    background-color:#B6D5CC;
+    background-color:#EDEDED;
 }
 <style>
 
@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 30%;
     left: 20px;
-    background-color:#B6D5CC;
+    background-color:rgba(0,0,0,0);
     float: left;
     line-height: .25;
 }
