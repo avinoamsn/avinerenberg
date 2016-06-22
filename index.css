@@ -3,12 +3,14 @@ body {
     background-color:#B6D5CC;
 }
 <style>
+
 #header {
     background-color:#B6D5CC;
     color:black;
     text-align:left;
     padding:5px;
 }
+
 /**#nav {
     line-height:30px;
     background-color:#B6D5CC;
@@ -20,11 +22,44 @@ body {
 
 #content {
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 20px;
     background-color:#B6D5CC;
     float: left;
     line-height: .25;
+}
+
+#floater {
+    position: relative;
+}
+
+#floater img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    -webkit-transition: all .25s ease; /* Safari and Chrome */
+    -moz-transition: all .25s ease; /* Firefox */
+    -o-transition: all .25s ease; /* IE 9 */
+    -ms-transition: all .25s ease; /* Opera */
+    transition: all .25s ease;
+}
+
+#floater:hover img {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+
+#floater_static {
+    position: relative;
+}
+
+#floater_static img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 #footer {
@@ -75,18 +110,18 @@ img {
 }
 
 .image img {
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -o-transition: all 1s ease; /* IE 9 */
-    -ms-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
+    -webkit-transition: all .25s ease; /* Safari and Chrome */
+    -moz-transition: all .25s ease; /* Firefox */
+    -o-transition: all .25s ease; /* IE 9 */
+    -ms-transition: all .25s ease; /* Opera */
+    transition: all .25s ease;
 }
 
 .image:hover img {
-    -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
 }
 </style>
