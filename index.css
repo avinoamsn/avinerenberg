@@ -156,10 +156,58 @@ img {
      transform:scale(1.05);
 }
 
+/******Resume image fade******/
+.image2 {
+    position:relative;
+}
+.image2 img {
+    position:absolute;
+}
+
+.image2 img.bottom {
+    -webkit-transition: opacity .5s ease-out;
+       -moz-transition: opacity .5s ease-out; /* Firefox < 16 */
+        -ms-transition: opacity .5s ease-out; /* Internet Explorer */
+         -o-transition: opacity .5s ease-out; /* Opera < 12.1 */
+            transition: opacity .5s ease-out;
+    opacity: 0;
+}
+
+.image2 img.top {
+    -webkit-transition: opacity .5s ease-in;
+       -moz-transition: opacity .5s ease-in; /* Firefox < 16 */
+        -ms-transition: opacity .5s ease-in; /* Internet Explorer */
+         -o-transition: opacity .5s ease-in; /* Opera < 12.1 */
+            transition: opacity .5s ease-in;
+}
+
+.image2:hover img.top {
+    -webkit-transition: opacity .5s ease-out; /* Safari, Chrome and Opera > 12.1 */
+       -moz-transition: opacity .5s ease-out; /* Firefox < 16 */
+        -ms-transition: opacity .5s ease-out; /* Internet Explorer */
+         -o-transition: opacity .5s ease-out; /* Opera < 12.1 */
+            transition: opacity .5s ease-out;
+    opacity: 0;
+}
+
+.image2:hover img.bottom {
+    -webkit-transition: opacity .5s ease-in; /* Safari, Chrome and Opera > 12.1 */
+       -moz-transition: opacity .5s ease-in; /* Firefox < 16 */
+        -ms-transition: opacity .5s ease-in; /* Internet Explorer */
+         -o-transition: opacity .5s ease-in; /* Opera < 12.1 */
+            transition: opacity .5s ease-in;
+    opacity: 1;
+}
+
 /****Fade in on page load****/
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
 
 /* Firefox < 16 */
