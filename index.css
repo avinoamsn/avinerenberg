@@ -11,20 +11,11 @@ body {
     padding:5px;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
-
-/**#nav {
-    line-height:30px;
-    background-color:#B6D5CC;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px; 
-}*/
 
 #content {
     position: fixed;
@@ -35,20 +26,20 @@ body {
     line-height: .3;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 #floater {
     position: relative;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /********Grow on Hover********/
@@ -68,17 +59,17 @@ body {
     -moz-transform:scale(1.05); /* Firefox */
     -ms-transform:scale(1.05); /* IE 9 */
     -o-transform:scale(1.05); /* Opera */
-     transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 #floater_static {
     position: relative;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 #floater_static img {
@@ -99,10 +90,10 @@ body {
     text-align:center;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 p.small {
@@ -153,7 +144,7 @@ img {
     -moz-transform:scale(1.05); /* Firefox */
     -ms-transform:scale(1.05); /* IE 9 */
     -o-transform:scale(1.05); /* Opera */
-     transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 /******Resume image fade******/
@@ -166,36 +157,36 @@ img {
 
 .image2 img.bottom {
     -webkit-transition: opacity .3s ease-out;
-       -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
-        -ms-transition: opacity .3s ease-out; /* Internet Explorer */
-         -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
-            transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-out; /* Internet Explorer */
+    -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
+    transition: opacity .3s ease-out;
     opacity: 0;
 }
 
 .image2 img.top {
     -webkit-transition: opacity .3s ease-in;
-       -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
-        -ms-transition: opacity .3s ease-in; /* Internet Explorer */
-         -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
-            transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-in; /* Internet Explorer */
+    -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
+    transition: opacity .3s ease-in;
 }
 
 .image2:hover img.top {
     -webkit-transition: opacity .3s ease-out; /* Safari, Chrome and Opera > 12.1 */
-       -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
-        -ms-transition: opacity .3s ease-out; /* Internet Explorer */
-         -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
-            transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-out; /* Internet Explorer */
+    -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
+    transition: opacity .3s ease-out;
     opacity: 0;
 }
 
 .image2:hover img.bottom {
     -webkit-transition: opacity .3s ease-in; /* Safari, Chrome and Opera > 12.1 */
-       -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
-        -ms-transition: opacity .3s ease-in; /* Internet Explorer */
-         -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
-            transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-in; /* Internet Explorer */
+    -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
+    transition: opacity .3s ease-in;
     opacity: 1;
 }
 
