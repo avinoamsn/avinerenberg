@@ -1,0 +1,227 @@
+body {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    background-color:#EDEDED;
+}
+<style>
+
+#header {
+    background-color:#B6D5CC;
+    color:black;
+    text-align:left;
+    padding:5px;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+#content {
+    position: fixed;
+    top: 30%;
+    left: 20px;
+    background-color:rgba(0,0,0,0);
+    float: left;
+    line-height: .3;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+#floater {
+    position: relative;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+/********Grow on Hover********/
+#floater img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */
+    -ms-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+}
+
+#floater:hover img {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+}
+
+#floater_static {
+    position: relative;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+#floater_static img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#footer {
+    background-color:rgba(255,0,0,0);
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    /**centered with this, although I'm not sure why it's necessary*/
+    margin-left: -100px;
+    color:black;
+    clear:both;
+    text-align:center;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+p.small {
+    font-size: 12px;
+    line-height: 0;
+}
+
+h2.medium {
+    padding-top: 50px;
+}
+
+/********Grow on Hover********/
+img {
+    max-width: 100%;
+}
+
+.thumbnail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    width: 320px;
+    height: 240px;
+    
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+.image {
+    display: inline;
+    width: 100%;
+    height: 100%;  
+}
+
+.image img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */
+    -ms-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+}
+
+/******Resume image fade******/
+.image2 {
+    position:relative;
+}
+.image2 img {
+    position:absolute;
+}
+
+.image2 img.bottom {
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-out; /* Internet Explorer */
+    -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
+    transition: opacity .3s ease-out;
+    opacity: 0;
+}
+
+.image2 img.top {
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-in; /* Internet Explorer */
+    -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
+    transition: opacity .3s ease-in;
+}
+
+.image2:hover img.top {
+    -webkit-transition: opacity .3s ease-out; /* Safari, Chrome and Opera > 12.1 */
+    -moz-transition: opacity .3s ease-out; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-out; /* Internet Explorer */
+    -o-transition: opacity .3s ease-out; /* Opera < 12.1 */
+    transition: opacity .3s ease-out;
+    opacity: 0;
+}
+
+.image2:hover img.bottom {
+    -webkit-transition: opacity .3s ease-in; /* Safari, Chrome and Opera > 12.1 */
+    -moz-transition: opacity .3s ease-in; /* Firefox < 16 */
+    -ms-transition: opacity .3s ease-in; /* Internet Explorer */
+    -o-transition: opacity .3s ease-in; /* Opera < 12.1 */
+    transition: opacity .3s ease-in;
+    opacity: 1;
+}
+
+/****Fade in on page load****/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+</style>
