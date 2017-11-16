@@ -1,1 +1,1 @@
-# Repo for my personal site: avinerenberg.com.
+# Repo for my personal site.
