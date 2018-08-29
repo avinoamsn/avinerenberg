@@ -4,5 +4,5 @@ The *package-lock.json* contains all the necessary info for installing the npm m
 
 ## Running locally
 
-	1.) Install all npm modules.
-	2.) '''npm run watch''' on the command line. (Other commands can be found in *package.json*.)
+1. Install all npm modules.
+2. '''npm run watch''' on the command line. (Other commands can be found in *package.json*.)
