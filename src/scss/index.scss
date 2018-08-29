@@ -103,6 +103,8 @@ a:visited {
 		top: -3vh;
 
 		ul {
+			cursor: default;
+			
 			font-weight: 400;
 			text-align: center;
 			letter-spacing: 0;
@@ -165,6 +167,8 @@ a:visited {
 	}
 
 	.arrow-poly {
+		cursor: pointer;
+
 		transition: .2s;
 	}
 
