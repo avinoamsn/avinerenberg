@@ -10,23 +10,31 @@ $frameTransition: transform .4s ease-in-out;
 
 body {
 	padding: 0;
-
     font-family: 'Roboto', sans-serif;
 }
 
 nav {
 	z-index: 5; // avoids collisions with other page elements
-	position: absolute;
-	text-align: center;	
-	
-	li {
-	transition: .15s ease-in-out; //TODO: have this not effected by window resize
-	//animation: nav-hover .15s backwards;
-	}
 
-	li:hover {
-		transform: scaleX(1.05);
-		//animation: nav-hover .15s forwards;
+	position: absolute;
+	top: 85vh; // default nav height (modified as needed in sub-elements, intent is to have center of nav in the same place on each page)
+	left: 70vw;
+
+	text-align: center;	
+
+	ul {
+		font-size: 3vw;
+		line-height: 4vw;
+
+		li {
+		transition: .15s ease-in-out; 	//TODO: have this not effected by window resize
+										//animation: nav-hover .15s backwards;
+		}
+
+		li:hover {
+			transform: scaleX(1.05);
+										//animation: nav-hover .15s forwards;
+		}
 	}
 }
 
@@ -84,12 +92,6 @@ a:visited {
 
 	nav {
 		top: 75vh;
-		left: 70vw;
-
-		ul {
-			font-size: 3vw;
-			line-height: 4vw;
-		}
 	}
 
 	#avi {
@@ -145,11 +147,6 @@ a:visited {
 	transform: translateY(-100vh); // above splash screen
 	transition: $frameTransition;
 
-	nav {
-		top: 85vh;
-		left: 75vw;
-	}
-
 	ul#dd-portfolio {
 		cursor: default;
 
@@ -201,24 +198,23 @@ a:visited {
 	transition: $frameTransition;
 
 	nav {
-		top: 85vh;
-		left: 75vw;
+		top: 80vh;
 	}
 
 	#resume-pdf {
-		width: 1100px; // TODO: make this dynamic, to fit multiple webpage sizes
+		width: 60vw; // TODO: make this dynamic, to fit multiple webpage sizes
+		height: 100vh;
 
 		position: absolute;
-		bottom: 0;
+		top: 20vh;
 
-		overflow: hidden; // hide scrollbar
+		z-index: -5;
 
 		iframe {
-			overflow: hidden;
-			//overflow-y: scroll;
-			border: 0; // hide default border
-
 			width: 100%;
+			height: 80vh; // long enough to remove scroll bar at most display ratios (TODO: add responsiveness for phones in landscape)
+
+			border: 0; // hide default border
 		}
 	}
 

@@ -40,6 +40,17 @@ jQuery(document).ready(function( $ ) {
 		$('#blog').css({"transform":"translateY(100vh)"});
 	});
 
+	/****** ADDITIONAL MOVEMENT ******/
+
+	// Scroll on resume
+	$('#resume-nav').on('click', function() {
+
+		// shift right
+		$('#index').css({"transform":"translateX(-100vw)"});
+		$('#resume').css({"transform":"translateX(0vw)"});
+
+	});
+
 	// During window resize, remove transitions (TODO: reset css after event)
 	/*function removeTransition() {
 		$('ul').children().css({"transition":"0s"});
