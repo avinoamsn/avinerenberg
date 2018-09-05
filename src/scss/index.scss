@@ -63,7 +63,12 @@ a:visited {
 	text-decoration: none;
 }
 
-/****** Classes ******/
+/****** Top-Level Classes ******/
+
+// Disable transitions on page load
+.preload * {
+ transition: none !important;
+}
 
 // Ignore scrollbars
 .wrapper {
@@ -124,7 +129,7 @@ a:visited {
 				line-height: 50vw;
 			}
 
-			li#minor-characters {
+			li.minor-characters {
 				display: inline;
 
 				font-size: 5vw;
@@ -189,6 +194,7 @@ a:visited {
 }
 
 // Resume
+// Display settings affecting PDF.js are in web/viewer.html
 
 #resume {
 	transform: translateX(100vw); // right of splash screen
@@ -198,6 +204,24 @@ a:visited {
 		top: 85vh;
 		left: 75vw;
 	}
+
+	#resume-pdf {
+		width: 1100px; // TODO: make this dynamic, to fit multiple webpage sizes
+
+		position: absolute;
+		bottom: 0;
+
+		overflow: hidden; // hide scrollbar
+
+		iframe {
+			overflow: hidden;
+			//overflow-y: scroll;
+			border: 0; // hide default border
+
+			width: 100%;
+		}
+	}
+
 }
 
 // Blog

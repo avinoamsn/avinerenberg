@@ -7,12 +7,54 @@
 <symbol id="sprite">
 <symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
 </symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z"/>
+</symbol>
+<symbol id="sprite">
+<symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z"/>
+</symbol>
 <symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z" stroke="#000"/>
 </symbol>
 <symbol id="sprite">
 <symbol id="arrow-left" viewBox="0 0 325 467"><path d="M97 .5c-3.167 106.167 37.5 347.6 225.5 464-208 0-463 48.5-225.5-464z" stroke="#000"/>
 </symbol>
 <symbol id="arrow-right" viewBox="0 0 324 466"><path d="M227.958 465.728c3.166-106.166-37.5-347.6-225.5-464 208 0 463-48.5 225.5 464z" stroke="#000"/>
+</symbol>
+</symbol>
+</symbol>
+</symbol>
+</symbol>
+</symbol>
+</symbol>
 </symbol>
 </symbol>
 </symbol></svg>

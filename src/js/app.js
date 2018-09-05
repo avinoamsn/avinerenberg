@@ -1,5 +1,10 @@
 jQuery(document).ready(function( $ ) {
 
+	// Remove the "preload" class after page load (disables transitions for page load)
+	$("body").removeClass("preload");
+
+	/****** NAVIGATION ANIMATIONS ******/
+
 	// Navigate to portfolio
 	$('#portfolio-nav').on('click', function() {
 
@@ -46,3 +51,7 @@ jQuery(document).ready(function( $ ) {
 		$('ul').children().off();
 	});*/
 });
+
+/*var parent = document.getElementById('mainContainer');
+var child = document.getElementById('viewerContainer');
+child.style.right = child.clientWidth - child.offsetWidth + "px";*/
