@@ -42,51 +42,33 @@ jQuery(document).ready(function( $ ) {
 
 	/****** ADDITIONAL NAVIGATION ******/
 
-	// TODO: remove scroll bar, add scrolling function to resume page
 	// Scroll on resume
-	/*$('#resume-nav').on('click', function() {
+	var scrollCount = 0;
 
-		// shift right
-		$('#index').css({"transform":"translateX(-100vw)"});
-		$('#resume').css({"transform":"translateX(0vw)"});
+	$('#resume-png').bind('mousewheel DOMMouseScroll', function(event){
 
-	});*/
+	    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+	    	// scroll up
+	    	if (scrollCount == 0) return;	// don't go lower than starting position
+	    	scrollCount+=10;
+	    	$('#resume-png').css({"transform":"translateY(" + scrollCount + "vh)"});
+	    } else {
+	    	// scroll down
+	    	if (scrollCount == -40) return;	// don't go higher than starting position -40vh 
+	    	scrollCount-=10;
+	    	$('#resume-png').css({"transform":"translateY(" + scrollCount + "vh)"});
+	    }
+
+	    console.log(scrollCount);
+	});
 
 	/****** PORFOLIO ******/
 
 	// A moving gallery for the portfolio <li>s
-	var logoCount = 1; // begins at 1 because jquery's ":nth-" child selectors are derived from the CSS spec (1-indexed)
-	var numLogos = $("ul#portfolio-imgs").children().length; // the number of logos (<li>s) in the list
-
 	$('#portfolio-imgs').slick({
 		nextArrow: $('#arrow-poly-right'),
 		prevArrow: $('#arrow-poly-left'),
-		
 	});
-
-	/*
-	$('ul#portfolio-imgs li:nth-child(1)').css({"visibility":"visible","display":"block"}); // display the first logo
-
-	// if right arrow clicked, "rotate" logos from right
-	$('#arrow-poly-right').on('click', function() {
-		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"transform":"translateX(100vw)",
-																	"visibility":"hidden",
-																	"display":"none"});		// hide current logo
-		logoCount++; 																		// increment logoCount
-		if (logoCount > numLogos) logoCount = 1; 											// if logoCount > numLogos, reset to 1
-		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"transform":"translateX(0vw)",
-																	"visibility":"visible",
-																	"display":"block"});	// display new logo
-	});
-
-	// if right arrow clicked, "rotate" logo from left
-	$('#arrow-poly-left').on('click', function() {
-		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"display":"none"}); 	// hide current logo
-		logoCount--;																		// decrement logoCount
-		if (logoCount < 1) logoCount = numLogos; 											// if logoCount < 1, set to numLogos
-		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"visibility":"visible","display":"block"}); 	// display new logod
-	});
-	*/
 
 	// During window resize, remove transitions (TODO: reset css after event)
 	/*function removeTransition() {
