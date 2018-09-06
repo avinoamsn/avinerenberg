@@ -54,7 +54,7 @@ jQuery(document).ready(function( $ ) {
 	    	$('#resume-png').css({"transform":"translateY(" + scrollCount + "vh)"});
 	    } else {
 	    	// scroll down
-	    	if (scrollCount == -40) return;	// don't go higher than starting position -40vh 
+	    	if (scrollCount == -100) return;	// don't go higher than starting position -Xvh 
 	    	scrollCount-=10;
 	    	$('#resume-png').css({"transform":"translateY(" + scrollCount + "vh)"});
 	    }
