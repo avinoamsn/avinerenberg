@@ -58,8 +58,6 @@ jQuery(document).ready(function( $ ) {
 	    	scrollCount-=10;
 	    	$('#resume-png').css({"transform":"translateY(" + scrollCount + "vh)"});
 	    }
-
-	    console.log(scrollCount);
 	});
 
 	/****** PORFOLIO ******/
