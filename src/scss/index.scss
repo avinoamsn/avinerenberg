@@ -83,6 +83,15 @@ a:visited {
 	overflow: hidden;
 }
 
+.100x100-center {
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /****** IDs ******/
 
 // Index
@@ -152,12 +161,41 @@ a:visited {
 
 		font-size: 1.5vw;
 		line-height: 2vw;
-	}
 
-	#dd-portfolio {
 		position: absolute;
 		top: 5vh;
 		left: 5vw;
+	}
+
+	ul#portfolio-imgs {
+		height: 100vh; 	// vertically center slick slider
+		width: 70vw; 	// disappear behind arrows
+
+		// position: absolute;
+		z-index: -5; 	// below arrows
+
+		display: flex;
+		align-items: center;
+		margin:auto;
+
+
+		.slick-track {
+			display: flex;
+			align-items: center; // vertically center slides
+		}
+
+
+		li {
+			display: flex;
+			justify-content: center; // horizontally center slides
+
+			img {
+				max-height: 45vh;
+				max-width: 55vw;
+
+				object-fit: contain; // avoids scewing
+			}
+		}
 	}
 
 	.arrow {
@@ -203,7 +241,6 @@ a:visited {
 
 	#resume-pdf {
 		width: 60vw; // TODO: make this dynamic, to fit multiple webpage sizes
-		height: 100vh;
 
 		position: absolute;
 		top: 20vh;
@@ -211,11 +248,9 @@ a:visited {
 
 		z-index: -5;
 
-		iframe {
+		img {
 			width: 100%;
-			height: 80vh; // long enough to remove scroll bar at most display ratios (TODO: add responsiveness for phones in landscape)
-
-			border: 0; // hide default border
+			box-shadow: 0 0 10px 0 black;
 		}
 	}
 

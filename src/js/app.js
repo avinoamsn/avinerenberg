@@ -40,16 +40,53 @@ jQuery(document).ready(function( $ ) {
 		$('#blog').css({"transform":"translateY(100vh)"});
 	});
 
-	/****** ADDITIONAL MOVEMENT ******/
+	/****** ADDITIONAL NAVIGATION ******/
 
+	// TODO: remove scroll bar, add scrolling function to resume page
 	// Scroll on resume
-	$('#resume-nav').on('click', function() {
+	/*$('#resume-nav').on('click', function() {
 
 		// shift right
 		$('#index').css({"transform":"translateX(-100vw)"});
 		$('#resume').css({"transform":"translateX(0vw)"});
 
+	});*/
+
+	/****** PORFOLIO ******/
+
+	// A moving gallery for the portfolio <li>s
+	var logoCount = 1; // begins at 1 because jquery's ":nth-" child selectors are derived from the CSS spec (1-indexed)
+	var numLogos = $("ul#portfolio-imgs").children().length; // the number of logos (<li>s) in the list
+
+	$('#portfolio-imgs').slick({
+		nextArrow: $('#arrow-poly-right'),
+		prevArrow: $('#arrow-poly-left'),
+		
 	});
+
+	/*
+	$('ul#portfolio-imgs li:nth-child(1)').css({"visibility":"visible","display":"block"}); // display the first logo
+
+	// if right arrow clicked, "rotate" logos from right
+	$('#arrow-poly-right').on('click', function() {
+		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"transform":"translateX(100vw)",
+																	"visibility":"hidden",
+																	"display":"none"});		// hide current logo
+		logoCount++; 																		// increment logoCount
+		if (logoCount > numLogos) logoCount = 1; 											// if logoCount > numLogos, reset to 1
+		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"transform":"translateX(0vw)",
+																	"visibility":"visible",
+																	"display":"block"});	// display new logo
+	});
+
+	// if right arrow clicked, "rotate" logo from left
+	$('#arrow-poly-left').on('click', function() {
+		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"display":"none"}); 	// hide current logo
+		logoCount--;																		// decrement logoCount
+		if (logoCount < 1) logoCount = numLogos; 											// if logoCount < 1, set to numLogos
+		$('ul#portfolio-imgs li:nth-child(' + logoCount + ')').css({"visibility":"visible","display":"block"}); 	// display new logod
+	});
+	*/
 
 	// During window resize, remove transitions (TODO: reset css after event)
 	/*function removeTransition() {
@@ -62,7 +99,3 @@ jQuery(document).ready(function( $ ) {
 		$('ul').children().off();
 	});*/
 });
-
-/*var parent = document.getElementById('mainContainer');
-var child = document.getElementById('viewerContainer');
-child.style.right = child.clientWidth - child.offsetWidth + "px";*/

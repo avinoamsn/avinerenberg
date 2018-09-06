@@ -14,6 +14,10 @@
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet"> 
 
+		<!-- slick jquery library -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+		<!-- Style sheet & icons -->
 		<link rel="stylesheet" href="dist/css/index.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -73,44 +77,18 @@
 		</section>
 		<!-- /index -->
 
-		<!-- portfolio -->
-		<section id="portfolio">
-
-			<nav>
-				<ul>
-					<li class="return">[return]</li>
-				</ul>
-			</nav>
-
-			<ul id="dd-portfolio">
-				<li>[Dedicated Development]</li>
-				<li>[Disruptive Design]</li>
-				<li>[Due Diligence]</li>
-			</ul>
-
-			<svg class="arrow" id="arrow-left">
-				<use class="arrow-poly" xlink:href="dist/img/icons/sprite.svg#arrow-left"></use>
-			</svg>
-
-			<svg class="arrow" id="arrow-right">
-				<use class="arrow-poly" xlink:href="dist/img/icons/sprite.svg#arrow-right"></use>
-			</svg>
-
-		</section>
-		<!-- /portfolio -->
-
 		<!-- resume -->
 		<section id="resume">
 			
 			<nav>
 				<ul>
-					<li><a href="nerenberg_avinoam.pdf">[download]</a></li>
+					<li><a href="dist/img/resume/nerenberg_avinoam.pdf">[download]</a></li>
 					<li class="return">[return]</li>
 				</ul>
 			</nav>
 
 			<section id="resume-pdf">
-				<iframe src="/web/viewer.html?file=../nerenberg_avinoam.pdf"></iframe>
+				<img src="dist/img/resume/nerenberg_avinoam.png">
 			</section>
 
 		</section>
@@ -128,10 +106,43 @@
 		</section>
 		<!-- /blog -->
 
+		<!-- portfolio -->
+		<section id="portfolio">
+
+			<nav>
+				<ul>
+					<li class="return">[return]</li>
+				</ul>
+			</nav>
+
+			<ul id="dd-portfolio">
+				<li>[Dedicated Development]</li>
+				<li>[Disruptive Design]</li>
+				<li>[Due Diligence]</li>
+			</ul>
+
+			<svg class="arrow" id="arrow-left">
+				<use class="arrow-poly" id="arrow-poly-left" xlink:href="dist/img/icons/sprite.svg#arrow-left"></use>
+			</svg>
+
+			<svg class="arrow" id="arrow-right">
+				<use class="arrow-poly" id="arrow-poly-right" xlink:href="dist/img/icons/sprite.svg#arrow-right"></use>
+			</svg>
+
+			<ul id="portfolio-imgs">
+				<li><a href="https://instituteforpatientaccess.org/"><img src="dist/img/logos/ifpa.png"></a></li>
+				<li><a href="https://alliancebpm.org/"><img src="dist/img/logos/afbpm.png"></a></li>
+				<li><a href="https://gafpa.org/"><img src="dist/img/logos/gafpa.png"></a></li>
+				<li><a href="http://hackital.io/"><img src="dist/img/logos/hackital.png"></a></li>
+			</ul>
+
+		</section>
+		<!-- /portfolio -->
 
 		<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="/dist/js/app.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<!-- /JS -->
 
 	</body>
