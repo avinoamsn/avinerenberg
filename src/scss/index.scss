@@ -162,7 +162,6 @@ a:visited {
 		height: 100vh; 	// vertically center slick slider
 		width: 70vw; 	// disappear behind arrows
 
-		// position: absolute;
 		z-index: -5; 	// below arrows
 
 		display: flex;
@@ -238,6 +237,8 @@ a:visited {
 
 		z-index: -5;
 
+		transition: .1s ease-out;
+
 		img {
 			width: 100%;
 			box-shadow: 0 0 10px 0 black;
@@ -266,10 +267,6 @@ a:visited {
 		position: absolute;
 		top: 5vh;
 		left: 5vw;
-	}
-
-	#blog-container {
-
 	}
 
 	.blog-content {
