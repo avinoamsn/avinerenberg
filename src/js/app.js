@@ -11,6 +11,7 @@ jQuery(document).ready(function( $ ) {
 		// shift up
 		$('#index').css({"transform":"translateY(100vh)"});
 		$('#portfolio').css({"transform":"translateY(0vh)"});
+
 	});
 
 	// Navigate to resume
@@ -19,7 +20,6 @@ jQuery(document).ready(function( $ ) {
 		// shift right
 		$('#index').css({"transform":"translateX(-100vw)"});
 		$('#resume').css({"transform":"translateX(0vw)"});
-
 	});
 
 	// Navigate to blog

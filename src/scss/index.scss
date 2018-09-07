@@ -55,6 +55,11 @@ li.return {
 	line-height: 3vw;
 }
 
+i:hover {
+	transition: .15s;
+	//TODO: add transition when hovering
+}
+
 // Remove default link styling
 a {
 	color: inherit;
@@ -82,6 +87,18 @@ a:visited {
 .wrapper {
 	overflow: hidden;
 }
+
+.fa-linkedin-in {
+	border-radius: 50%;
+	background-color: #212529; // GitHub fa icon background-color
+
+	transform: scaleX(1.1071); // stretch to same width as GH
+}
+
+/*.fa-linkedin-in:hover {
+	transform: scaleX(1.0871); // correction so that th icon doesn't transform awkwardly on hover
+	transform: scaleY(.97);
+}*/
 
 /****** IDs ******/
 
@@ -146,6 +163,20 @@ a:visited {
 #portfolio {
 	transform: translateY(-100vh); // above splash screen
 	transition: $frameTransition;
+
+	i {
+		//transform: translateY(200vh); // TODO: below everything, rises when navigating to portfolio
+
+		font-size: 20vh;
+
+		position: absolute;
+		left: 30vw;
+		top: 77vh;
+	}
+
+	.fa-github {
+		left: 45vw; // to the right of LinkedIm
+	}
 
 	ul#dd-portfolio {
 		cursor: default;
@@ -227,6 +258,23 @@ a:visited {
 	nav {
 		top: 80vh;
 	}
+
+	i {
+		font-size: 20vh;
+
+		position: absolute;
+		left: 75vw;
+		top: 20vh;
+	}
+
+	// 75.78
+	.fa-linkedin-in {
+		left: 75.78vw; // vertically align with GitHub
+	}
+
+	.fa-github {
+			top: 45vh; // place GitHub below LinkedIn
+		}
 
 	#resume-png {
 		width: 60vw; // TODO: make this dynamic, to fit multiple webpage sizes
