@@ -26,6 +26,11 @@ nav {
 		font-size: 3vw;
 		line-height: 4vw;
 
+		/*li.return {
+			font-size: 3vw;
+			line-height: 3vw;
+		}*/
+
 		li {
 		transition: .15s ease-in-out; 	//TODO: have this not effected by window resize
 										//animation: nav-hover .15s backwards;
@@ -48,11 +53,6 @@ ul {
 	margin: 0;
 
 	list-style: none;
-}
-
-li.return {
-	font-size: 3vw;
-	line-height: 3vw;
 }
 
 i:hover {
@@ -156,7 +156,7 @@ a:visited {
 			}
 		}
 	}
-}	
+}
 
 // Portfolio
 
@@ -332,7 +332,65 @@ a:visited {
 
 /****** Media Queries (responsive layout) ******/
 
-// TODO
+@media (max-aspect-ratio: 1/1) {
+	nav {
+		left: 50vw !important; // !important takes precedence over page-specific nav locations
+		transform: translate(-50%, -50%);
+
+		ul {
+			font-size: 10vw;
+			line-height: 11vw;
+		}
+	}
+
+	.page {
+		display: flex;
+		justify-content: center;
+	}
+
+	#index {
+
+		#avi {
+			top: 15vh;
+
+			font-size: 15vw;
+			line-height: 15vw;
+		}
+
+		#dd {
+			top: 30vh;
+		}
+	}
+
+	#portfolio {
+
+		ul#dd-portfolio {
+			font-size: 5vw;
+			line-height: 6vw;
+		}
+
+		ul#portfolio-imgs {
+			height: 75vh;
+
+			li img {
+    			max-height: 24vh;
+    		}
+		}
+
+		i {
+			left: 8vw;
+			top: 55vh;
+		}
+
+		.fa-github {
+    		left: 52vw;
+		}
+
+		.arrow {
+			height: 25vh;
+		}
+	}
+}
 
 /****** Keyframes ******/
 

@@ -11,7 +11,7 @@ jQuery(document).ready(function( $ ) {
 		// shift up
 		$('#index').css({"transform":"translateY(100vh)"});
 		$('#portfolio').css({"transform":"translateY(0vh)"});
-
+		$('nav').css({"transform":"translate(-58%, -50%)"}); // correction for the weird rightward shift once a click occurs
 	});
 
 	// Navigate to resume
@@ -20,6 +20,7 @@ jQuery(document).ready(function( $ ) {
 		// shift right
 		$('#index').css({"transform":"translateX(-100vw)"});
 		$('#resume').css({"transform":"translateX(0vw)"});
+		$('nav').css({"transform":"translate(-58%, -50%)"});
 	});
 
 	// Navigate to blog
@@ -28,11 +29,13 @@ jQuery(document).ready(function( $ ) {
 		// shift down
 		$('#index').css({"transform":"translateY(-100vh)"});
 		$('#blog').css({"transform":"translateY(0vh)"});
+		$('nav').css({"transform":"translate(-58%, -50%)"});
 	});
 
 	// Return to splash page
 	$('.return').on('click', function() {
 		$('#index').css({"transform":"translateY(0vh)"});
+		$('nav').css({"transform":"translate(-58%, -50%)"});
 
 		// reset every page
 		$('#portfolio').css({"transform":"translateY(-100vh)"});
@@ -69,7 +72,8 @@ jQuery(document).ready(function( $ ) {
 	});
 
 	// During window resize, remove transitions (TODO: reset css after event)
-	/*function removeTransition() {
+	/*
+	function removeTransition() {
 		$('ul').children().css({"transition":"0s"});
 		$(window).off('resize', removeTransition);
 	}
@@ -77,5 +81,6 @@ jQuery(document).ready(function( $ ) {
 	$(window).on('resize', function() {
 		$('ul').children().css({"transition":"0s"});
 		$('ul').children().off();
-	});*/
+	});
+	*/
 });
