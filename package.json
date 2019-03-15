@@ -1,10 +1,11 @@
 {
-  "_comment":"TODO: fix sprite generator. removed this script from \"icons\": \"&& svg-sprite-generate -d dist/img/icons -o dist/img/icons/sprite.svg\" ",
+  "_comment": "TODO: fix sprite generator. removed this script from \"icons\": \"&& svg-sprite-generate -d dist/img/icons -o dist/img/icons/sprite.svg\" ",
   "name": "avinerenberg",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "My portfolio website.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist/{css/*,js/*,img/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
