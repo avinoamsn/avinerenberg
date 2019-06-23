@@ -18,6 +18,10 @@ import About from '../views/About'
 import Contact from '../views/Contact'
 // import Menu from '../views/Menu' // TODO
 
+// Resume
+import resumeSingle from '../images/nerenberg-avinoam_single.pdf'
+import resumeFull from '../images/nerenberg-avinoam_full.pdf'
+
 import avatar from '../images/avatar.jpg'
 
 const ProjectsWrapper = styled.div`
@@ -71,6 +75,9 @@ const Index = () => (
 
         <Subtitle>
           I build appealing and effective <br /> user experiences.
+          <br />
+          <br />
+          My <a href={resumeSingle}>single-page</a> and <a href={resumeFull}>full</a> resumes.
         </Subtitle>
       </Hero>
 
@@ -154,9 +161,10 @@ const Index = () => (
 
         <AboutDesc>
           But until then, I'll be building stuff. Maybe I'll build things that will change the world. Hopefully I'll
-          build things that are easy and fun to use. <br />
-          <br />I was once told that "all coding is just string manipulation. Is that true? I don't know. But it sounds
-          like sage wisdom when you say it. All coding is just string manipulation.
+          build things that are easy and fun to use.
+          <br />
+          <br />I was once told that "all coding is just string manipulation." Is that true? I don't know. But it sounds
+          like sage wisdom when you say it.
         </AboutDesc>
       </About>
 
