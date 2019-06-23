@@ -180,7 +180,7 @@ const Index = () => (
 
         <Footer>
           &copy; 2019 by Avi Nerenberg. <a href="https://github.com/avinoamsn/avinerenberg">Github Repository</a>.
-          Original theme from <a href="https://www.lekoarts.de">LekoArts</a>.
+          Original template from <a href="https://www.lekoarts.de">LekoArts</a>.
         </Footer>
       </Contact>
     </Parallax>
