@@ -34,13 +34,14 @@
     "portfolio"
   ],
   "scripts": {
-    "start": "npm run dev",
+		"start": "npm run dev",
     "dev": "gatsby develop -o",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
+    "lint:ci": "npm lint --format junit -o results/eslint/result.xml",
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -51,15 +52,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
-    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/avinoamsn/avinerenberg",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
+    "url": "https://github.com/avinoamsn/avinerenberg/issues"
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "https://avinerenberg.com"
 }
