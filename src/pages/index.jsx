@@ -113,7 +113,7 @@ const Index = () => (
           <ProjectCard
             title="Hackital"
             link="http://hackital.io/"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            bg="linear-gradient(to right, #3cc99a 0%, #893bc9 100%)"
           >
             I cofounded an annual international student hackathon at my alma mater in Foggy Bottom, developed responsive
             MailChimp email marketing campaigns that boosted pre-event registration by nearly 50%, and recruited
@@ -122,21 +122,21 @@ const Index = () => (
           <ProjectCard
             title="Budbot"
             link="http://www.budbot.co/"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+            bg="linear-gradient(to right, #d6e03a 0%, #c644b2 100%)"
           >
             I prototyped a textbot interface using Python + Plivo, and designed the brand and website.
           </ProjectCard>
           <ProjectCard
             title="Inkoo"
             link="http://new.inkoo.es/"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+            bg="linear-gradient(to right, #db6c51 0%, #c9c63b 100%)"
           >
             I designed, developed and maintained Inkoo's WordPress website.
           </ProjectCard>
           <ProjectCard
             title="Digital Media Academy"
             link="https://github.com/avinoamsn/html5blank-custom"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            bg="linear-gradient(to right, #2ef7b7 0%, #9ff72d 100%)"
           >
             I organized and lead several two- and three-week coding classes, where I built games in Java with high
             school students and designed Minecraft mods with elementary- and middle school students.
