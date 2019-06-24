@@ -16,7 +16,7 @@ import Hero from '../views/Hero'
 import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
-// import Menu from '../views/Menu' // TODO
+// import Menu from '../views/Menu' // TODO: finish an animated nav menu
 
 // Resume
 import resumeSingle from '../images/nerenberg-avinoam_single.pdf'
@@ -77,7 +77,7 @@ const Index = () => (
           I build appealing and effective <br /> user experiences.
           <br />
           <br />
-          My <a href={resumeSingle}>single-page</a> and <a href={resumeFull}>full</a> resumes.
+          My <a href={resumeFull}>full</a> and <a href={resumeSingle}>single-page</a> resumes.
         </Subtitle>
       </Hero>
 
