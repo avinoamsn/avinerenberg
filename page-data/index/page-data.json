@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"componentChunkName":"component---src-pages-index-jsx","path":"/","webpackCompilationHash":"3fd13818490407590a0d","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
-=======
-{"componentChunkName":"component---src-pages-index-jsx","path":"/","webpackCompilationHash":"ccbb2d61cc3a4d979af5","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
->>>>>>> c6cef0b9b234e0541f8bd98ad19283820055b471
+{"componentChunkName":"component---src-pages-index-jsx","path":"/","result":{"pageContext":{}}}
