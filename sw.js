@@ -26,17 +26,28 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
+<<<<<<< HEAD
     "url": "webpack-runtime-c8f1cc2c84d20ebf176e.js"
   },
   {
     "url": "app-bbfa3a8a4e759b7e2126.js"
+=======
+    "url": "webpack-runtime-ed0aca4bd95f243bff5d.js"
+  },
+  {
+    "url": "app-c144f0039e03c322fe97.js"
+>>>>>>> c6cef0b9b234e0541f8bd98ad19283820055b471
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-32c95458821e1e2af952.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
+<<<<<<< HEAD
     "revision": "f7ebf2c42ea241af4350361b948f0639"
+=======
+    "revision": "cf35b44a971e3f584c474a4790a2add6"
+>>>>>>> c6cef0b9b234e0541f8bd98ad19283820055b471
   },
   {
     "url": "manifest.webmanifest",
