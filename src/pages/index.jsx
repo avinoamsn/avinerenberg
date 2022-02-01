@@ -174,7 +174,7 @@ const Index = () => (
           <ContactText>
             Say <a href="mailto:hello@avinerenberg.com">hi</a> or find me on other platforms:{' '}
             <a href="https://twitter.com/avinerenberg">Twitter</a> &{' '}
-            <a href="https://www.linkedin.com/in/avinoam-nerenberg/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/avinerenberg/">LinkedIn</a>
           </ContactText>
         </Inner>
 
